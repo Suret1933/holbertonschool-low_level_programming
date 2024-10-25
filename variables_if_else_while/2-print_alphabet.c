@@ -1,20 +1,20 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
- * main - Prints the alphabet in lowercase.
+ * main - Prints the alphabet in lowercase, followed by a new line
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	char letter = 'a';
 
-	for (i = 0; i < 26; i++)
+	while (letter <= 'z')
 	{
-		putchar(alphabet[i]);
+		putchar(letter);
+		letter++;
 	}
-	putchar('\n');  /* New line after printing the alphabet */
+	putchar('\n');
 
 	return (0);
 }
