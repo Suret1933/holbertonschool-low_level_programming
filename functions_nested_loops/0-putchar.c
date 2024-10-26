@@ -1,12 +1,20 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * main - '_putchar' ifadesini yazdırır
+ * main - Prints "_putchar" followed by a new line
  *
- * Return: 0 her şey yolunda ise
+ * Return: 0 on success
  */
 int main(void)
 {
-	write(1, "_putchar\n", 9);
+	char *str = "_putchar";
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
