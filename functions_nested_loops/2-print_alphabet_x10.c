@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Küçük harflerle alfabenin 10 kez yazdırılmasını sağlar
+ * print_alphabet_x10 - Küçük harflerle alfabenin
+ * 10 kez yazdırılmasını sağlar
  *
  * Return: void
  */
