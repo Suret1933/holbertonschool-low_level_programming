@@ -1,7 +1,11 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-int _putchar(char c);
-int print_last_digit(int n);
-
-#endif /* MAIN_H */
+/**
+ * main - check the code
+ * Return: Always 0
+ */
+int main(void)
+{
+	jack_bauer();
+	return (0);
+}
