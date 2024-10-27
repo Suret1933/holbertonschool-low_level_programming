@@ -1,11 +1,9 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- * main - check the code
- * Return: Always 0
- */
-int main(void)
-{
-	jack_bauer();
-	return (0);
-}
+#include <unistd.h>
+
+void jack_bauer(void);
+int _putchar(char c);
+
+#endif /* MAIN_H */
