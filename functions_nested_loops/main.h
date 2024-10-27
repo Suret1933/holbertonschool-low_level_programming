@@ -1,7 +1,16 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
+#include <stdio.h>
 
-int _putchar(char c);
-void times_table(void);
+/**
+ * main - Check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	int n;
 
-#endif /* MAIN_H */
+	n = add(89, 9);
+	printf("%d\n", n);
+	return (0);
+}
