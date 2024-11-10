@@ -1,15 +1,15 @@
 #include "main.h"
-
 /**
- * print_numbers - prints the numbers from 0 to 9
- * Return: void
+ * print_numbers - ooo
+ * Return: o
  */
 void print_numbers(void)
 {
-char c;
-for (c = '0'; c <= '9'; c++)
-{
-_putchar(c);
-}
-_putchar('\n');  // Son satırda yeni satır karakteri yazdırıyoruz.
+	int a;
+
+	for (a = 0; a <= 9; a++)
+	{
+		_putchar(a + '0');
+	}
+	_putchar('\n');
 }
