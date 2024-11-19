@@ -18,5 +18,5 @@ dest[i] = src[i];
 i++;
 }
 dest[i] = '\0'; /* Null byte ekle */
-return dest;
+return (dest);
 }
