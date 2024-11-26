@@ -1,15 +1,24 @@
 #include "main.h"
-
+/**
+ * print_argc - Recursively find the last digit and print n
+ * @n: The integer
+ */
+void print_argc(int n)
+{
+	if (n / 10 != 0)
+		print_argc(n / 10);
+	_putchar((n % 10) + '0');
+}
 /**
  * main - Entry point of the program
- * @argc: Number of arguments
- * @argv: Array of argument strings
+ * @argc: arguments
+ * @argv: Array of * to arguments
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
-(void) argv;  /* We are not using argv, so we mark it as unused */
-_putchar(argc - 1 + '0');  /* Print the number of arguments */
-_putchar('\n');  /* Newline after printing the number */
-return (0);
+	(void) argv;  /*delete unused variable*/
+	print_argc(argc - 1);
+	_putchar('\n');
+	return (0);
 }

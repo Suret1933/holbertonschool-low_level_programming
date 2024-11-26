@@ -1,16 +1,19 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - Prints the name of the program
- *
- * @argc: Argument count
- * @argv: Argument vector (array of arguments)
- *
- * Return: Always 0 (Success)
+ * main - print the name of the exe
+ * @argc: the arguments
+ * @argv: array of string
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-(void)argc;  /* argc'yi kullanmadığımızı belirtmek için */
-printf("%s\n", argv[0]);  /* Program adını yazdır */
-return (0);  /* return ifadesi parantezle sarılmalı */
+	int i, j;
+
+	for (i = 0; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+			_putchar(argv[i][j]);
+	}
+	_putchar('\n');
+return (0);
 }
